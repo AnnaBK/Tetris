@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main-field">
+            <div>
+                <!-- <h2 class="level">Level </h2> -->
+                <div class="tetris"></div>
+            </div>
+            <div class="aside">
+                <div class="key-btns">
+                    <button class="control-btn" id="rotate-btn">Rotate</button>
+                    <div>
+                        <button class="control-btn" id="left-btn">Left</button>
+                        <button class="control-btn" id="right-btn">Right</button>
+                    </div>
+                    <div>
+                        <button class="control-btn" id="down-btn">Down</button>
+                        <button class="control-btn" id="fall-btn">Fall</button>
+                    </div>
+                    <button class="control-btn" id="pause-btn">Pause</button>
+                </div>
+                <button class="restart">Restart</button>
+                <div id="score"></div>
+            </div>
+        </div>
+        <div class="game-over">
+            <div class="game-over-inner">
+                <h3>Game over</h3>
+                <p>Your score is: <span id="final-score"></span></p>
+                <p>Would you like to start again?</p>
+                <button class="restart">Restart</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(199, 199, 224), rgb(89, 160, 89));
+    height: 100vh;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.level{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tetris{
+    background-color: greenyellow;
+    padding: 0.5vh;
+    border-radius: 0.5vh;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(20, auto);
+}
+
+.tetris div{
+    height: min(4vh, 7vw);
+    width: min(4vh, 7vw);
+    background-color: aquamarine;
+    border-radius: 0.3vh;
+    box-shadow: inset 2px 2px 2px gray, inset 2px 2px 2px rgb(107, 74, 74);
+}
+
+.aside{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.key-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.key-btns button{
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(219, 215, 176);
+    color: rgb(1, 1, 1);
+    font-family: Arial;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#score{
+    height: 10vh;
+    /* width: 10vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(131, 144, 140);
+    border-radius: 30px;
+    /* box-shadow: inset 2px 2px 2px rgb(134, 128, 128), inset 2px 2px 2px rgb(148, 126, 126); */
+    font-size: large;
+}
+
+/* .tetris .O{
+    background-color: yellow;
+}
+
+.tetris .L{
+    background-color: rgb(158, 45, 105);
+}
+
+.tetris .J{
+    background-color: rgb(158, 45, 105);
+}
+
+.tetris .S{
+    background-color: rgb(158, 45, 105);
+}
+
+.tetris .Z{
+    background-color: rgb(158, 45, 105);
+}
+
+.tetris .T{
+    background-color: rgb(158, 45, 105);
+}
+
+.tetris .I{
+    background-color: rgb(158, 45, 105);
+} */
+
+.game-over{
+    position: fixed;
+    background-color: rgba(50, 51, 36, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-over-inner{
+    background-color: rgba(181, 163, 97, 0.8);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px 10px 5px;
+}
+
+.game-over-inner h3{
+    color:rgb(91, 61, 29);
+    font-family: Arial;
+}
+
+#final-score{
+    color:rgb(143, 66, 28);
+    font-size: 20px;
+}
+
+.game-over-inner p{
+    color:rgb(60, 50, 23);
+    font-family: Arial;
+}
+
+.restart{
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(219, 215, 176);
+    color: rgb(1, 1, 1);
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
